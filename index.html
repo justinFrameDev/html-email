@@ -8,7 +8,33 @@
     <title>Document</title>
 
     <style type="text/css">
-        @media screen and (max-width: 600px) {}
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            table[class="responsive-table"] {
+                width: 100% !important;
+                padding: 10px 5%;
+            }
+            table[class="responsive-table2"] {
+                width: 100% !important;
+            }
+
+            img[class="responsive-image"] {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            td[class="headline"] {
+                font-size: 36px !important;
+                background: #222;
+                color: #fff;
+                padding-bottom: 20px;
+            }
+        }
     </style>
 </head>
 
@@ -19,10 +45,48 @@
             <td align="center">
 
                 <!-- 600px CONTAINER -->
-                <table width="600" cellspacing="0" cellpadding="0" border="0">
+                <table width="600" cellspacing="0" cellpadding="0" border="0" class="responsive-table">
                     <tr>
                         <td>
-                            <img src="img/me.jpg" width="600" height="300">
+                            <img src="img/me.jpg" width="600" height="300" class="responsive-image">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="font-size: 48px; padding-top: 20px;" class="headline">
+                            I &hearts; Stock photos
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px 0; font-size: 20px;">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aperiam dolore, unde, error quis soluta voluptates est distinctio,
+                            nesciunt mollitia quam nihil? Perspiciatis maxime maiores excepturi velit libero illum rerum
+                            tenetur fugit! Possimus et laudantium sunt quo a ullam commodi voluptate, beatae numquam illum
+                            quibusdam quasi assumenda officiis. Neque, necessitatibus.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <table width="300" align="right" cellspacing="0" cellpadding="0" border="0" class="responsive-table2">
+                                <tr>
+                                    <td bgcolor="#ddd" style="padding: 15px;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero excepturi sunt, debitis veniam quas commodi ut quasi sint
+                                        porro minima architecto iste molestiae quaerat sed eveniet labore? Facilis sunt labore
+                                        doloremque exercitationem aliquam, iure accusantium corporis. Eligendi officia dolorem
+                                        at, praesentium unde alias harum ratione assumenda aliquid asperiores ea odio.
+                                    </td>
+                                </tr>
+                            </table>
+                            <table width="300" align="left" cellspacing="0" cellpadding="0" border="0" class="responsive-table2">
+                                <tr>
+                                    <td bgcolor="#aaa" style="padding: 15px;">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam aut, perspiciatis doloribus repudiandae ipsum minus harum
+                                        esse inventore sunt neque fugit ab ipsam, cumque quasi placeat ratione aperiam suscipit
+                                        assumenda in dolor cupiditate quam asperiores. Debitis ab doloremque fuga facere
+                                        nam rem consequatur alias dignissimos aspernatur? Ab aspernatur soluta omnis.
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
